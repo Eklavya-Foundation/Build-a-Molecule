@@ -13,3 +13,9 @@ the sims, as well as other important information.
 
 ### License
 See the <a href="https://github.com/phetsims/build-a-molecule/blob/master/LICENSE" target="_blank">LICENSE</a>
+
+### Updates
+
+- Collection bug fixed. Now you can always complete a collection and move to the next one.
+
+- BH3 and H2 space filling model bug fixed, now they are displayed well
