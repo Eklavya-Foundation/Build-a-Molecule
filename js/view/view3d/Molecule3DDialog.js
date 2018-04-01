@@ -29,7 +29,7 @@ define( function( require ) {
 
   // strings
   var spaceFillString = require( 'string!BUILD_A_MOLECULE/3d.spaceFilling' ); // eslint-disable-line string-require-statement-match
-  var ballAndStickString = require( 'string!BUILD_A_MOLECULE/3d.ballAndStick' ); // eslint-disable-line string-require-statement-match
+//  var ballAndStickString = require( 'string!BUILD_A_MOLECULE/3d.ballAndStick' ); // eslint-disable-line string-require-statement-match
 
   var size = 200;
   var verticalOffset = size + 5;
@@ -92,7 +92,7 @@ define( function( require ) {
       fill: 'white'
     };
     var spaceFillText = new Text( spaceFillString, buttonTextOptions );
-    var ballAndStickText = new Text( ballAndStickString, buttonTextOptions );
+    //var ballAndStickText = new Text( ballAndStickString, buttonTextOptions );
 
     var radioButtonOptions = {
       selectedColor: 'rgba(255,255,255,0.4)', // fill
@@ -104,11 +104,12 @@ define( function( require ) {
     };
     var spaceFillButton = new AquaRadioButton( viewStyleProperty, 'spaceFill', spaceFillText, radioButtonOptions );
     spaceFillButton.touchArea = Shape.bounds( spaceFillButton.localBounds.dilated( optionsHorizontalPadding / 2 ) );
-    var ballAndStickButton = new AquaRadioButton( viewStyleProperty, 'ballAndStick', ballAndStickText, radioButtonOptions );
+    /*var ballAndStickButton = new AquaRadioButton( viewStyleProperty, 'ballAndStick', ballAndStickText, radioButtonOptions );
     ballAndStickButton.touchArea = Shape.bounds( ballAndStickButton.localBounds.dilated( optionsHorizontalPadding / 2 ) );
     ballAndStickButton.left = spaceFillButton.right + optionsHorizontalPadding;
-    var buttonHolder = new Node( {
-      children: [ spaceFillButton, ballAndStickButton ],
+    */var buttonHolder = new Node( {
+      //children: [ spaceFillButton, ballAndStickButton ],
+      children: [ spaceFillButton],
       centerX: stageCenterX,
       top: stageCenterY + verticalOffset
     } );

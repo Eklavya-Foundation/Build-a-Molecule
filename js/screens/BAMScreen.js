@@ -4,7 +4,7 @@
  * Supertype for modules in Build a Molecule. Handles code required for all modules (bounds, canvas handling, and the ability to switch models)
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
- */
+ */ 
 define( function( require ) {
   'use strict';
 
@@ -54,6 +54,7 @@ define( function( require ) {
    * @return A consistent kitCollection
    */
   BAMScreen.generateKitCollection = function( allowMultipleMolecules, numBoxes, clock, layoutBounds ) {
+
     var maxInBox = 3;
 
     var usedMolecules = []; // [CompleteMolecule]
@@ -154,6 +155,7 @@ define( function( require ) {
     }
 
     var collection = new KitCollection();
+    console.log('L1 : Lets see again');
     _.each( kits, collection.addKit.bind( collection ) );
     _.each( boxes, collection.addCollectionBox.bind( collection ) );
     return collection;

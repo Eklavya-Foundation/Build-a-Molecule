@@ -34,6 +34,8 @@ define( function( require ) {
 
     var y = 0;
 
+    console.log('K1 : Getting here before collection node');
+
     // add nodes for all of our collection boxes.
     _.each( collection.collectionBoxes, function( collectionBox ) {
       var collectionBoxNode = isSingleCollectionMode ? new SingleCollectionBoxNode( collectionBox, toModelBounds ) : new MultipleCollectionBoxNode( collectionBox, toModelBounds );

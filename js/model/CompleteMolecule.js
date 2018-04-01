@@ -22,9 +22,9 @@ define( function( require ) {
   var Bond = require( 'BUILD_A_MOLECULE/model/Bond' );
   var MoleculeStructure = require( 'BUILD_A_MOLECULE/model/MoleculeStructure' );
   var nodeTypes = [
-    require( 'NITROGLYCERIN/nodes/Cl2Node' ), require( 'NITROGLYCERIN/nodes/CO2Node' ), require( 'NITROGLYCERIN/nodes/CO2Node' ),
-    require( 'NITROGLYCERIN/nodes/CS2Node' ), require( 'NITROGLYCERIN/nodes/F2Node' ), require( 'NITROGLYCERIN/nodes/H2Node' ),
-    require( 'NITROGLYCERIN/nodes/N2Node' ), require( 'NITROGLYCERIN/nodes/NONode' ), require( 'NITROGLYCERIN/nodes/N2ONode' ),
+    require( 'NITROGLYCERIN/nodes/BH3Node' ),require( 'NITROGLYCERIN/nodes/Cl2Node' ), require( 'NITROGLYCERIN/nodes/CO2Node' ), 
+    require( 'NITROGLYCERIN/nodes/CO2Node' ),require( 'NITROGLYCERIN/nodes/CS2Node' ), require( 'NITROGLYCERIN/nodes/F2Node' ), 
+    require( 'NITROGLYCERIN/nodes/H2Node' ),require( 'NITROGLYCERIN/nodes/N2Node' ), require( 'NITROGLYCERIN/nodes/NONode' ),
     require( 'NITROGLYCERIN/nodes/O2Node' ), require( 'NITROGLYCERIN/nodes/C2H2Node' ), require( 'NITROGLYCERIN/nodes/C2H4Node' ),
     require( 'NITROGLYCERIN/nodes/C2H5ClNode' ), require( 'NITROGLYCERIN/nodes/C2H5OHNode' ), require( 'NITROGLYCERIN/nodes/C2H6Node' ),
     require( 'NITROGLYCERIN/nodes/CH2ONode' ), require( 'NITROGLYCERIN/nodes/CH3OHNode' ), require( 'NITROGLYCERIN/nodes/CH4Node' ),
@@ -32,7 +32,7 @@ define( function( require ) {
     require( 'NITROGLYCERIN/nodes/HFNode' ), require( 'NITROGLYCERIN/nodes/NH3Node' ), require( 'NITROGLYCERIN/nodes/NO2Node' ),
     require( 'NITROGLYCERIN/nodes/OF2Node' ), require( 'NITROGLYCERIN/nodes/P4Node' ), require( 'NITROGLYCERIN/nodes/PCl3Node' ),
     require( 'NITROGLYCERIN/nodes/PCl5Node' ), require( 'NITROGLYCERIN/nodes/PF3Node' ), require( 'NITROGLYCERIN/nodes/PH3Node' ),
-    require( 'NITROGLYCERIN/nodes/SO2Node' ), require( 'NITROGLYCERIN/nodes/SO3Node' )
+    require( 'NITROGLYCERIN/nodes/SO2Node' ), require( 'NITROGLYCERIN/nodes/SO3Node' ), require( 'NITROGLYCERIN/nodes/N2ONode' )
   ];
 
   /*
@@ -98,7 +98,7 @@ define( function( require ) {
       var length = nodeTypes.length;
       for ( var i = 0; i < length; i++ ) {
         var NodeType = nodeTypes[ i ];
-        if ( NodeType.name === molecularFormulaType || ( NodeType.name === 'NH3Node' && molecularFormula === 'H3N' ) ) {
+        if ( NodeType.name === molecularFormulaType || ( NodeType.name === 'NH3Node' && molecularFormula === 'H3N' )) {
           return new NodeType();
         }
       }

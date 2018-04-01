@@ -62,6 +62,7 @@ define( function( require ) {
     } );
     this.locationUpdateObserver = function() {
       box.dropBounds = toModelBounds( self.blackBox );
+      console.log('K2 : After collectionnode');
     };
 
     if ( Constants.has3d ) {

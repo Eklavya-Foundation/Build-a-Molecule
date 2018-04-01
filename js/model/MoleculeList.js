@@ -244,6 +244,25 @@ define( function( require ) {
   MoleculeList.Cl2 = MoleculeList.getMoleculeByName( 'Chlorine' );
   MoleculeList.NH3 = MoleculeList.getMoleculeByName( 'Ammonia' );
 
+  MoleculeList.C2H2 = MoleculeList.getMoleculeByName( 'Acetylene' );
+  MoleculeList.BH3 =  MoleculeList.getMoleculeByName( 'Borane' );
+  MoleculeList.BF3 =  MoleculeList.getMoleculeByName( 'Trifluoroborane' );
+  MoleculeList.CH3Cl =  MoleculeList.getMoleculeByName( 'Chloromethane' );
+  MoleculeList.C2H4 =  MoleculeList.getMoleculeByName( 'Ethylene' );
+  MoleculeList.F2 =  MoleculeList.getMoleculeByName( 'Fluorine' );
+  MoleculeList.CH3F =  MoleculeList.getMoleculeByName( 'Fluoromethane' );
+  MoleculeList.CH2O =  MoleculeList.getMoleculeByName( 'Formaldehyde' );
+  MoleculeList.CHN =  MoleculeList.getMoleculeByName( 'Hydrogen Cyanide' );
+  MoleculeList.H2O2 =  MoleculeList.getMoleculeByName( 'Hydrogen Peroxide' );
+  MoleculeList.H2S =  MoleculeList.getMoleculeByName( 'Hydrogen Sulfide' );
+  MoleculeList.CH3 =  MoleculeList.getMoleculeByName( 'Methane' );
+  MoleculeList.N2O =  MoleculeList.getMoleculeByName( 'Nitrous Oxide' );
+  MoleculeList.O3 =  MoleculeList.getMoleculeByName( 'Ozone' );
+  MoleculeList.H3P =  MoleculeList.getMoleculeByName( 'Phosphine' );
+  MoleculeList.H4Si =  MoleculeList.getMoleculeByName( 'Silane' );
+  MoleculeList.O2S =  MoleculeList.getMoleculeByName( 'Sulfur Dioxide' );
+
+
   /**
    * Molecules that can be used for collection boxes
    */
@@ -257,7 +276,26 @@ define( function( require ) {
     MoleculeList.NH3,
     MoleculeList.Cl2,
     MoleculeList.NO,
-    MoleculeList.getMoleculeByName( 'Acetylene' ),
+
+    MoleculeList.C2H2,
+    MoleculeList.BH3,
+    MoleculeList.BF3,
+    MoleculeList.CH3Cl,
+    MoleculeList.C2H4,
+    MoleculeList.F2,
+    MoleculeList.CH3F,
+    MoleculeList.CH2O,
+    MoleculeList.CHN,
+    MoleculeList.H2O2,
+    MoleculeList.H2S,
+    MoleculeList.CH3,
+    MoleculeList.N2O,
+    MoleculeList.O3,
+    MoleculeList.H3P,
+    MoleculeList.H4Si,
+    MoleculeList.O2S
+
+/*    MoleculeList.getMoleculeByName( 'Acetylene' ),
     MoleculeList.getMoleculeByName( 'Borane' ),
     MoleculeList.getMoleculeByName( 'Trifluoroborane' ),
     MoleculeList.getMoleculeByName( 'Chloromethane' ),
@@ -274,6 +312,7 @@ define( function( require ) {
     MoleculeList.getMoleculeByName( 'Phosphine' ),
     MoleculeList.getMoleculeByName( 'Silane' ),
     MoleculeList.getMoleculeByName( 'Sulfur Dioxide' )
+*/
   ];
 
   _.each( MoleculeList.collectionBoxMolecules, function( molecule ) {

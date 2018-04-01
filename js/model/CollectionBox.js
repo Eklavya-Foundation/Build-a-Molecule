@@ -34,7 +34,6 @@ define( function( require ) {
     this.capacity = capacity;
     this.molecules = [];
     this._dropBounds = Bounds2.NOTHING;
-
     this.on( 'addedMolecule', function( molecule ) {
       if ( self.quantity === capacity ) {
         Globals.gameAudioPlayer.correctAnswer();
@@ -74,7 +73,7 @@ define( function( require ) {
     addMolecule: function( molecule ) {
       this.quantity++;
       this.molecules.push( molecule );
-
+      console.log('Adding molecule: ' + molecule);
       this.trigger( 'addedMolecule', molecule );
     },
 

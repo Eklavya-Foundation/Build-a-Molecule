@@ -26,6 +26,7 @@ define( function( require ) {
     var collectionAttachmentCallbacks = [];
 
     var collectionPanel = new CollectionPanel( collectionList, isSingleCollectionMode, collectionAttachmentCallbacks, function( node ) {
+
       // returns model bounds from a node, given local coordinates on a node
       var viewBounds = node.getParent().getUniqueTrail().getTransformTo( self.getUniqueTrail() ).transformBounds2( node.bounds );
       return Constants.modelViewTransform.viewToModelBounds( viewBounds );

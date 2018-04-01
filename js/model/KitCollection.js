@@ -52,25 +52,30 @@ define( function( require ) {
       var dropListener = function( atom ) {
         var wasDroppedInCollectionBox = false;
 
+
         // don't drop an atom from the kit to the collection box directly
         if ( kit.isAtomInPlay( atom ) ) {
           var molecule = kit.getMolecule( atom );
 
           // check to see if we are trying to drop it in a collection box.
           var numBoxes = self.collectionBoxes.length;
+
           for ( var i = 0; i < numBoxes; i++ ) {
             var box = self.collectionBoxes[ i ];
+          console.log('A1 :' + box.dropBounds.intersectsBounds( molecule.positionBounds )); 
+          console.log('A2 :'+box.willAllowMoleculeDrop( molecule ));
 
             // permissive, so that if the box bounds and molecule bounds intersect, we call it a 'hit'
-            if ( box.dropBounds.intersectsBounds( molecule.positionBounds ) ) {
-
+//            if ( box.dropBounds.intersectsBounds( molecule.positionBounds ) ) {
+              console.log('A3 : Im gettin here');
               // if our box takes this type of molecule
               if ( box.willAllowMoleculeDrop( molecule ) ) {
+                console.log('A4 : molecule dropped');
                 kit.moleculePutInCollectionBox( molecule, box );
                 wasDroppedInCollectionBox = true;
                 break;
               }
-            }
+//            }
           }
         }
 

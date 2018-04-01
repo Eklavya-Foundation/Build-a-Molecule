@@ -78,7 +78,7 @@
     "value": "Fluoromethane"
   },
   "title.largerMolecules": {
-    "value": "Larger"
+    "value": "Larger Molecule"
   },
   "collection.yourMoleculeCollection": {
     "value": "Your Molecules"
@@ -111,7 +111,7 @@
     "value": "Hydrogen"
   },
   "title.makeMolecule": {
-    "value": "Single"
+    "value": "Make Molecules"
   },
   "kit.resetKit": {
     "value": "Refill Kit"
@@ -147,7 +147,7 @@
     "value": "Methane"
   },
   "title.collectMultiple": {
-    "value": "Multiple"
+    "value": "Collect Multiple"
   },
   "molecule.ammonia": {
     "value": "Ammonia"

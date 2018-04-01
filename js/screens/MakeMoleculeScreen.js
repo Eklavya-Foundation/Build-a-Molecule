@@ -4,7 +4,7 @@
  * 1st screen: collection boxes only take 1 molecule, and our 1st kit collection is always the same
  *
  * @author Jonathan Olson <jonathan.olson@colorado.edu>
- */
+ */ 
 define( function( require ) {
   'use strict';
 
@@ -33,7 +33,6 @@ define( function( require ) {
     };
 
     BAMScreen.call( this,
-
       // createInitialKitCollection
       function( bounds, clock ) {
         var kitCollection = new KitCollection();
