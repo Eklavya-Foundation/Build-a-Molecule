@@ -31,3 +31,5 @@ Then, assuming that the Grunt CLI has been installed and that the project has al
 - Run Grunt with grunt.
 
 That's really all there is to it. Installed Grunt tasks can be listed by running grunt --help but it's usually a good idea to start with the project's documentation.
+
+Finally, in this case, go to the build folder and open the file "build-a-molecule_en.html" to use the app
